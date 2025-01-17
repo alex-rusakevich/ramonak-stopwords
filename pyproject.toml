@@ -1,0 +1,18 @@
+[project]
+name = "ramonak-stopwords"
+version = "1.0.0"
+description = "Stopwords for Belarusian language"
+authors = [
+    { name = "Alexander Rusakevich", email = "mr.alexander.rusakevich@gmail.com" },
+]
+license = { text = "LGPLv3.0" }
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["scikit-learn", "pandas", "numpy"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
