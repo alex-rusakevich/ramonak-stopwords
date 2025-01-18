@@ -68,11 +68,11 @@ def main():
 
     print("Writing the result to data/stopwords.txt and data/all.csv...")
 
-    f_all = open(DATA_DIR / "all.csv", "w", encoding="utf8")
-    f_sw_sm = open(DATA_DIR / "stopwords-sm.txt", "w", encoding="utf8")
-    f_sw_md = open(DATA_DIR / "stopwords-md.txt", "w", encoding="utf8")
-    f_sw_lg = open(DATA_DIR / "stopwords-lg.txt", "w", encoding="utf8")
-    f_sw_all = open(DATA_DIR / "stopwords-all.txt", "w", encoding="utf8")
+    f_all = open(DATA_DIR / "stopwords-be-all-scores.csv", "w", encoding="utf8")
+    f_sw_sm = open(DATA_DIR / "stopwords-be-sm.txt", "w", encoding="utf8")
+    f_sw_md = open(DATA_DIR / "stopwords-be-md.txt", "w", encoding="utf8")
+    f_sw_lg = open(DATA_DIR / "stopwords-be-lg.txt", "w", encoding="utf8")
+    f_sw_all = open(DATA_DIR / "stopwords-be-all.txt", "w", encoding="utf8")
 
     tfidf_matrix_sum = np.sum(tfidf_matrix, axis=0).tolist()[0]
 

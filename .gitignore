@@ -171,3 +171,4 @@ cython_debug/
 .pypirc
 
 /yabc
+/data/stopwords-be-all-scores.csv
